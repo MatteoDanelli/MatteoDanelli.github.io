@@ -1,17 +1,10 @@
 (function() {
 
 	skel.init({
-		reset: 'full',
 		breakpoints: {
-			'global': { range: '*', href: 'css/style.css', viewport: { scalable: false } },
-			'wide': { range: '-1680', href: 'css/style-wide.css' },
-			'normal': { range: '-1280', href: 'css/style-normal.css' },
-			'mobile': { range: '-736', href: 'css/style-mobile.css' },
-			'mobilep': { range: '-480', href: 'css/style-mobilep.css' }
+			'global': { range: '*', href: 'css/style.css', viewport: { scalable: false } }
 		}
 	});
-
-	// Events (JS).
 		
 		// Remove "loading" class once the page has fully loaded.
 			window.onload = function() {
