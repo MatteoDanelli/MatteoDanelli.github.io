@@ -1,7 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 
-/* Basic */
 
 	body, input, select, textarea {
 		color: white;
@@ -10,11 +9,7 @@
 		font-weight: 300 !important;
 		letter-spacing: -0.025em;
 		line-height: 1.75em;
-	}
-
-	body {
-		background: white;
-		overflow: hidden;
+		margin: 0;
 	}
 
 	a {
@@ -24,11 +19,6 @@
 		text-decoration: none;
 	}
 
-		a:hover {
-			border-color: transparent;
-		}
-
-/* Icon */
 
 	.icon {
 		position: relative;
@@ -38,39 +28,30 @@
 			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
+			padding: 15px;
+    border-radius: 100px;
+    border: 1px solid white;
 		}
 
 		.icon > .label {
 			display: none;
 		}
 
-/* Wrapper */
+		.icon:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
-	#wrapper {
-
-		height: 100%;
-		left: 0;
-		opacity: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
-
-/* BG */
 
 	#bg {
-		background: linear-gradient(
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.5)
+		background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)
     ),
     url("images/bg10.jpg") bottom left;
 		height: 100%;
 		background-size: cover;
 		width: 100%;
 	}
-
-
-/* Main */
 
 	#main {
 		height: 100%;
@@ -81,21 +62,11 @@
 		width: 100%;
 	}
 
-		#main:before {
-			content: '';
-			display: inline-block;
-			height: 100%;
-			margin-right: 0;
-			vertical-align: middle;
-			width: 1px;
-		}
-
-/* Header */
 
 	#header {
 		cursor: default;
 		display: inline-block;
-		opacity: 0;
+		opacity: 1;
 		position: relative;
 		text-align: right;
 		top: -1em;
@@ -122,12 +93,12 @@
 
 			#header nav li {
 				display: inline-block;
-				height: 5.35em;
+				height: 4em;
 				line-height: 5.885em;
-				opacity: 0;
+				opacity: 1;
 				position: relative;
 				top: 0;
-				width: 5.35em;
+				width: 4em;
 			}
 
 			#header nav a {
@@ -138,7 +109,6 @@
 					display: none;
 				}
 
-/* Footer */
 
 	#footer {
 		bottom: 0;
